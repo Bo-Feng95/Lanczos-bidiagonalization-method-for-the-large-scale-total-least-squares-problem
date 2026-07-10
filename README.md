@@ -15,8 +15,10 @@ Lanczos bidiagonalization method for the large-scale total least squares problem
 
 %test:
 % (i) Test the generic case
+      
       A = sprand(m,n,0.005); 
       b = ones(size(A,1),1); b = b/norm(b);
+      
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
       t = tic; [fx1,x,err1] = Restart_PSLB_TLS(A,b,50,200,1e-13,1); t = toc(t)
       %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
@@ -48,4 +50,5 @@ A = P(:, 1:2999);
 b = P(:, 3000);
 
 [fx1,x,err1] = Restart_PSLB_TLS(A,b,50,200,1e-8,1);
+
 [fx,x,err] = PSLB_TLS(A,b,n,1e-8);
