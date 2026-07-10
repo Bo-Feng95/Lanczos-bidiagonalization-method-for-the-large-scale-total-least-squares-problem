@@ -1,9 +1,14 @@
 # Lanczos-bidiagonalization-method-for-the-large-scale-total-least-squares-problem
 Lanczos bidiagonalization method for the large-scale total least squares problem
+
 % [fx,x,err] = PSLB_TLS(A,b,kmax,tol): PSLB algorithm for solving TLS problems (without restarted)
+
 % [fx1,x,err1] = Restart_PSLB_TLS(A,b,int_it,out_it,tol,flag): a restarted block Lanczos bidiagonalization method for TLS problem
+
 % [V, D, flag] = tls_eigs(varargin): This algorithm is built on the eigs.m, with only the stopping criterion adjusted
+
 % [S, V, flag] = tls_svds(A,varargin): This algorithm is built on the svds.m, with only the stopping criterion adjusted
+
 % [x, f_hist] = TLS_RQI(A, b, max_iter, tol): Rayleigh quotient iteration (RQI) iteration for Total Least Squares
 
 
